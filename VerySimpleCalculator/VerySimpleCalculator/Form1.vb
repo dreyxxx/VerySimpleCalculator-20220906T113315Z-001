@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    Dim firstNum, secondNum, sum, product, quotient As Double
+    Dim firstNum, secondNum, sum, product, quotient As Double 'naka provide na variable guys eto lang gamitin sa codes nyo
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
