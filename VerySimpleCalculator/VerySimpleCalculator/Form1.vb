@@ -13,30 +13,24 @@
         lblResult.Text = lblResult.Text & " " & sum
         lblResult.Text = "The sum is " & sum
 
-
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnProduct.Click
+    Private Sub btnProduct_Click(sender As Object, e As EventArgs) Handles btnProduct.Click
         '****RAMOS*****  
         firstNum = txtBox1.Text
         secondNum = txtBox2.Text
         product = firstNum * secondNum
         MsgBox("The product of " & firstNum & " and " & secondNum & " is " & product)
 
-        'lblResult.Text = lblResult.Text & " " & product ----> label text sa baba for providing answers after clicking the button 
-        'lblResult.Text = "The product is " & product   --------> yung naka assign sa label text eto na codes oh haha kaso each buttons may ganto ilagay sa bawat isa baguhin nalang yung operation saka yung Text
+        lblResult.Text = lblResult.Text & " " & product
+        lblResult.Text = "The product is " & product
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnSum.Click
-        MessageBox.Show("The sum of 2 and 3 is 5.")
-    End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnDifference.Click
+    Private Sub btnDifference_Click(sender As Object, e As EventArgs) Handles btnDifference.Click
         '****OCARES****
         firstNum = txtBox1.Text
         secondNum = txtBox2.Text
@@ -47,12 +41,14 @@
         'lblResult.Text = "The difference is " & difference
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnQuotient.Click
+    Private Sub btnQuotient_Click(sender As Object, e As EventArgs) Handles btnQuotient.Click
+        firstNum = txtBox1.Text
+        secondNum = txtBox2.Text
+        quotient = firstNum / secondNum
+        MessageBox.Show(" The quotient of " & firstNum & " and " & secondNum & " is " & quotient & ".")
+        lblResult.Text = " The quotient is " & quotient & "."
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblResult.Click
-        
 
-    End Sub
 End Class
