@@ -4,6 +4,15 @@
 
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        '***Erwin***
+        firstNum = txtBox1.Text
+        secondNum = txtBox2.Text
+        sum = firstNum + secondNum
+        MsgBox("The sum of " & firstNum & " and " & secondNum & " is " & sum)
+        
+        lblResult.Text = lblResult.Text & " " & sum
+        lblResult.Text = "The sum is " & sum
+
 
     End Sub
 
