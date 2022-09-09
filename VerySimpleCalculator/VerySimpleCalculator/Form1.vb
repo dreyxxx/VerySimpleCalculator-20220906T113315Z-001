@@ -3,7 +3,7 @@
     Dim firstNum, secondNum, sum, difference, product, quotient As Double 'naka provide na variable guys eto lang gamitin sa codes nyo
 
     
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles btnsum.Click
         '***Erwin***
         firstNum = txtBox1.Text
         secondNum = txtBox2.Text
