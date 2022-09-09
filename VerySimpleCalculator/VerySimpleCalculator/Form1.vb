@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    Dim firstNum, secondNum, sum, product, quotient As Double 'naka provide na variable guys eto lang gamitin sa codes nyo
+    Dim firstNum, secondNum, sum, difference, product, quotient As Double 'naka provide na variable guys eto lang gamitin sa codes nyo
 
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
@@ -29,7 +29,12 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnDifference.Click
         '****OCARES****
+        firstNum = txtBox1.Text
+        secondNum = txtBox2.Text
+        difference = firstNum - secondNum
 
+        lblResult.Text = lblResult.Text & " " & difference
+        lblResult.Text = "The difference is " & difference
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnQuotient.Click
