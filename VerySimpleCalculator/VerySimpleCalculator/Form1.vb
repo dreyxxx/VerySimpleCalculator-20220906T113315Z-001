@@ -8,7 +8,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnProduct.Click
@@ -18,8 +18,8 @@
         product = firstNum * secondNum
         MsgBox("The product of " & firstNum & " and " & secondNum & " is " & product)
 
-        lblResult.Text = lblResult.Text & " " & product
-        lblResult.Text = "The product is " & product
+       'lblResult.Text = lblResult.Text & " " & product ----> label text sa baba for providing answers after clicking the button 
+       'lblResult.Text = "The product is " & product   --------> yung naka assign sa label text eto na codes oh haha kaso each buttons may ganto ilagay sa bawat isa baguhin nalang yung operation saka yung Text
 
     End Sub
 
