@@ -9,7 +9,7 @@
         secondNum = txtBox2.Text
         sum = firstNum + secondNum
         MsgBox("The sum of " & firstNum & " and " & secondNum & " is " & sum)
-        
+
         lblResult.Text = lblResult.Text & " " & sum
         lblResult.Text = "The sum is " & sum
 
@@ -41,10 +41,10 @@
         firstNum = txtBox1.Text
         secondNum = txtBox2.Text
         difference = firstNum - secondNum
-        MsgBox("The difference of " & firstNum & " and " & secondNum & " is " & product)
+        MsgBox("The difference of " & firstNum & " and " & secondNum & " is " & difference)
 
-        lblResult.Text = lblResult.Text & " " & difference
-        lblResult.Text = "The difference is " & difference
+        'lblResult.Text = lblResult.Text & " " & difference
+        'lblResult.Text = "The difference is " & difference
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnQuotient.Click
