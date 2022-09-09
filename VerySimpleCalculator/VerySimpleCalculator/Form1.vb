@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    Dim firstNum, secondNum, sum, product, quotient As Double
+    Dim firstNum, secondNum, sum, product, quotient As Double 'eto global variables natin guys eto lang gamitin nyo 
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
